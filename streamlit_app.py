@@ -7,15 +7,11 @@ st.title("Chat with the Tax Assistant 2022, powered by GPT3.5")
 # Sidebar for entering OpenAI key
 with st.sidebar:
     st.title('OpenAI key')
-    if 'openai_key' in st.secrets:
-        st.success('OpenAI key already provided!', icon='✅')
-        openai_key = st.secrets['openai_key']
+    openai_key = st.text_input('Enter OpenAI key:', type='password')
+    if not openai_key:
+        st.warning('Please enter your OpenAI key!', icon='⚠️')
     else:
-        openai_key = st.text_input('Enter OpenAI key:', type='password')
-        if not openai_key:
-            st.warning('Please enter your OpenAI key!', icon='⚠️')
-        else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+        st.success('Proceed to entering your prompt message!', icon='👉')
 
  # Store chat messages, and initialize the chat message history
 if "messages" not in st.session_state.keys():
