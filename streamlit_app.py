@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-st.set_page_config(page_title="Chat with the Tax Assistant 2022, powered by GPT3.5", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Chat GPT3.5", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 st.title("Chat with the Tax Assistant 2022, powered by GPT3.5")
 
 # Sidebar for entering OpenAI key
