@@ -2,8 +2,7 @@
 ```
 ⬆️ (Replace above with your app's name)
 ```
-
-Description of the app ...
+https://chabbot-with-gpt35.streamlit.app/
 
 ## Demo App
 
